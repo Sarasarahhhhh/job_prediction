@@ -131,37 +131,3 @@ def compute_em_and_semantic_accuracy(
         "AccRM": acc_rm,
         "total": total,
     }
-
-
-if __name__ == "__main__":
-    # Minimal demo (you can remove this in production)
-    # Example usage:
-    example_data = [
-        {
-            "ground_truth_occupation": {"onet_title": "Data Scientist"},
-            "predictions": {
-                "qwen_base": "Data Scientist",
-                "other_model": "Machine Learning Engineer",
-            },
-        },
-        {
-            "ground_truth_occupation": {"onet_title": "Data Scientist"},
-            "predictions": {
-                "qwen_base": "Machine Learning Engineer",
-            },
-        },
-    ]
-
-    example_related = {
-        "Data Scientist": {
-            "1": "Machine Learning Engineer",  # rank 2
-            "2": "Data Analyst",               # rank 3
-        }
-    }
-
-    metrics = compute_em_and_semantic_accuracy(
-        example_data,
-        predictor="qwen_base",
-        related_titles=example_related,
-    )
-    print(metrics)
