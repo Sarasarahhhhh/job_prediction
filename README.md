@@ -89,10 +89,10 @@ Expected input format per sample:
 ```json
 {
     "ground_truth_occupation": {
-        "onet_title": "Data Scientist"
+        "onet_title": "Data Scientists"
     },
     "predictions": {
-        "model_name": "Machine Learning Engineer"
+        "model_name": "Computer and Information Research Scientists"
     }
 }
 ```
