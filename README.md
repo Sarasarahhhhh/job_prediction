@@ -1,6 +1,5 @@
 # On Reasoning Behind Next Occupation Recommendation
-
-This repository contains code and configurations for training and evaluating language models to predict career trajectories based on education and work history.
+This repository contains code and configurations for training and evaluating language models to predict career trajectories based on education and work history. The dataset used for training and evaluation is proprietary and can be made available for peer review upon request.
 
 ## Overview
 
